@@ -1,0 +1,17 @@
+﻿@using aspnet_mvc_et_codefirst.Models
+@model IEnumerable<Kisiler>
+@{
+    ViewBag.Title = "HomePage";
+}
+
+<h2>HomePage</h2>
+
+<ul>
+    @foreach (var kisi in Model)
+    {
+        <li>
+            @(kisi.Ad + " " + kisi.Soyad)
+        </li>
+    }
+</ul>
+
